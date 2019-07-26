@@ -32,6 +32,8 @@ class CashRegister
     end
   end
   
-  
+  def items
+    @groceries
+  end
   
 end
