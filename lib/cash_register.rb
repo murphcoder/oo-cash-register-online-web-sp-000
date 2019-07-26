@@ -23,9 +23,7 @@ class CashRegister
   def add_item(item,price,quantity = 1)
     quantity.times do
       @total += price
-      if item != nil
-        @groceries << item
-      end
+      @groceries << item
     end
   end
   
