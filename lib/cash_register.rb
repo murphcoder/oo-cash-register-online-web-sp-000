@@ -23,7 +23,6 @@ class CashRegister
   def add_item(name,price,quantity = 1)
     quantity.times do
       @total += price
-      @groceries << name
     end
   end
   
