@@ -1,6 +1,5 @@
 class CashRegister
   
-  attr_reader :total
   @discount = 0
   @grocery_list = {}
   
@@ -15,6 +14,10 @@ class CashRegister
   
   def demonetize(number)
     ((number.to_f) * 100).to_i
+  end
+  
+  def total
+    (@total.to_f) / 100
   end
   
   def add_item(item,price,quantity = 1)
