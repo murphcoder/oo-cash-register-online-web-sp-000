@@ -8,7 +8,7 @@ class CashRegister
     @groceries = []
   end
   
-  def add_item(title,price,quantity)
+  def add_item(title,price,quantity = 1)
     quantity.times do
       @total += price
       @groceries << title
