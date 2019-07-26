@@ -25,4 +25,7 @@ class CashRegister
     @total += self.demonetize(price) * quantity
   end
   
+  def apply_discount
+    @total 
+  
 end
