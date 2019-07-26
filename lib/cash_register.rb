@@ -24,6 +24,7 @@ class CashRegister
     quantity.times do
       @total += price
       @groceries << item
+    end
   end
   
   def apply_discount
