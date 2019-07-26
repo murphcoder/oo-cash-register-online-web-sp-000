@@ -3,7 +3,7 @@ class CashRegister
   @discount = 0.0
   @grocery_list = {}
   
-  def initialize(discount = nil)
+  def initialize(discount = 100)
     @discount = discount / 100
     @total = 0
   end
@@ -27,6 +27,8 @@ class CashRegister
   
   def apply_discount
     @total *= @discount
+    if @discount == 1
+      
   end
   
 end
