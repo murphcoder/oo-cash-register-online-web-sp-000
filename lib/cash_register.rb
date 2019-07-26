@@ -21,7 +21,8 @@ class CashRegister
   end
   
   def add_item(item,price,quantity = 1)
-    
+    @grocery_list[item] = price
+    @total += self.demonetize(price) * quantity
   end
   
 end
