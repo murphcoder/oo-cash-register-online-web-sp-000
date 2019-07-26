@@ -22,7 +22,7 @@ class CashRegister
   
   def add_item(item,price,quantity = 1)
     @groceries << item
-    @total += self.demonetize(price) * quantity
+    @total += price * quantity
   end
   
   def apply_discount
