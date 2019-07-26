@@ -1,7 +1,7 @@
 class CashRegister
   
   @discount = 0.0
-  @grocery_list = {}
+  @groceries = []
   
   def initialize(discount = 100)
     @discount = discount / 100
@@ -21,7 +21,7 @@ class CashRegister
   end
   
   def add_item(item,price,quantity = 1)
-    @grocery_list[item] = price
+    @groceries << item
     @total += self.demonetize(price) * quantity
   end
   
